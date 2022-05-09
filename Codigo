@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Interes{
+
+public static void main(String[] args) {
+    float capital, interes;
+    double acumulado;
+    int meses;
+    Scanner teclado = new Scanner(System.in);
+    System.out.println("Introduce el capital prestado:");
+    capital = teclado.nextFloat();
+    System.out.println("Introduce el interes por meses (%):");
+    interes = teclado.nextFloat();
+    System.out.println("Introduce la cantidad de meses por interes:");
+    meses = teclado.nextInt();
+    acumulado=capital*(Math.pow((1+interes/100),(meses)));
+    System.out.println("El acumulado a pagar es de:" +acumulado);
+}
+}
